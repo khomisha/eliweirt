@@ -1,0 +1,48 @@
+{
+	"name": "acr_role",
+	"title": "\u0420\u043e\u043b\u044c",
+	"table": {
+		"updateTableName": "acr_role",
+		"select": "select rol_id, rol_name from acr_role where rol_name not like 'root'",
+		"key":"rol_id",
+		"rowCountColumn": "",
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "rol_id",
+			"caption": "rol_id",
+			"dbName": "acr_role.rol_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "rol_name",
+			"caption": "\u0420\u043e\u043b\u044c",
+			"dbName": "acr_role.rol_name",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		}
+	]
+}
+

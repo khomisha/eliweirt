@@ -1,0 +1,47 @@
+{
+	"name": "d_user_state",
+	"title": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0439 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
+	"table": {
+		"updateTableName": "d_user_state",
+		"select": "select sta_id, sta_name from d_user_state",
+		"key":"sta_id",
+		"rowCountColumn": "",
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "sta_id",
+			"caption": "sta_id",
+			"dbName": "d_user_state.sta_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "sta_name",
+			"caption": "\u0421\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435",
+			"dbName": "d_user_state.sta_name",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		}
+	]
+}

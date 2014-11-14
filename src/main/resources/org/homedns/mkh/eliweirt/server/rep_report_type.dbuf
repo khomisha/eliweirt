@@ -1,0 +1,69 @@
+{
+	"name": "rep_report_type",
+	"title": "Report Type",
+	"table": {
+		"updateTableName": "rep_report_type",
+		"select": "SELECT  rpt_id,  rpt_name,  rpt_databuffer FROM  rep_report_type",
+		"key":"rpt_id",
+		"rowCountColumn": "",
+		"pageSize": 18,
+		"argType": [],
+		"reportData": ""
+	},
+	"columns": [
+		{
+			"name": "rpt_id",
+			"caption": "rpt_id",
+			"dbName": "rep_report_type.rpt_id",
+			"type": "INT",
+			"update": false,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": "",
+			"reportParam" : ""
+		},
+		{
+			"name": "rpt_name",
+			"caption": "Type",
+			"dbName": "rep_report_type.rpt_name",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": "",
+			"reportParam" : ""
+		},
+		{
+			"name": "rpt_databuffer",
+			"caption": "Data buffer",
+			"dbName": "rep_report_type.rpt_databuffer",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": "",
+			"reportParam" : ""
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"name": "acr_sys_object",
+	"title": "acr_sys_object",
+	"table": {
+		"updateTableName": "acr_sys_object",
+		"select": "select sob_id, sob_name from acr_sys_object",
+		"key":"sob_id",
+		"rowCountColumn": "",
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "sob_id",
+			"caption": "sob_id",
+			"dbName": "acr_sys_object.sob_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "sob_name",
+			"caption": "Object Name",
+			"dbName": "acr_sys_object.sob_name",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		}
+	]
+}

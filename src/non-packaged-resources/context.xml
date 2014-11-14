@@ -1,0 +1,16 @@
+<Context>
+ 	<!-- Specify a JDBC datasource for login-->
+ 	<Resource name="jdbc/login" auth="ContainerLogin"
+    	type="javax.sql.DataSource" username="gms_login_user" password="l251957"
+    	driverClassName="org.postgresql.Driver"
+    	url="jdbc:postgresql://localhost:5432/gms"
+    	maxActive="20" maxIdle="3" maxWait="10000" />
+
+ 	<!-- Specify a JDBC datasource for application-->
+ 	<Resource name="jdbc/db" auth="ContainerDB"
+    	type="javax.sql.DataSource" username="gms_user" password="251957"
+    	driverClassName="org.postgresql.Driver"
+    	url="jdbc:postgresql://localhost:5432/gms"
+    	maxActive="50" maxIdle="5" maxWait="10000" />
+</Context>
+

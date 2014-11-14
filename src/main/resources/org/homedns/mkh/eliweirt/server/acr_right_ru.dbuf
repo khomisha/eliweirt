@@ -1,0 +1,212 @@
+{
+	"name": "acr_right",
+	"title": "\u0420\u0430\u0441\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u043f\u0440\u0430\u0432 \u0434\u043b\u044f \u0440\u043e\u043b\u0435\u0439",
+	"table": {
+		"updateTableName": "? = call save_eliweirt_role",
+		"select": "select  user_role, role_id, entry_panel, adminsheet, acr_right,  acr_user,  acr_user_log,  sms_slot_floor, managersheet, rep_report_type FROM  acr_right_v",
+		"key":"user_role",
+		"rowCountColumn": "",
+		"pageSize": 18,
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "user_role",
+			"caption": "\u0420\u043e\u043b\u044c \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
+			"dbName": "acr_right_v.user_role",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "role_id",
+			"caption": "role_id",
+			"dbName": "acr_right_v.role_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "entry_panel",
+			"caption": "\u0421\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c",
+			"dbName": "acr_right_v.entry_panel",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "dddb",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "acr_sys_object",
+			"dddbDisplayColumn": "sob_name",
+			"dddbDataColumn": "sob_id"
+		},
+		{
+			"name": "adminsheet",
+			"caption": "\u0410\u0420\u041c \u0430\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u0430",
+			"dbName": "acr_right_v.adminsheet",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "adminsheet_name",
+			"dddbDataColumn": "adminsheet"
+		},
+		{
+			"name": "acr_right",
+			"caption": "\u0420\u043e\u043b\u044c",
+			"dbName": "acr_right_v.acr_right",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "acr_right_name",
+			"dddbDataColumn": "acr_right"
+		},
+		{
+			"name": "acr_user",
+			"caption": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c",
+			"dbName": "acr_right_v.acr_user",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "acr_user_name",
+			"dddbDataColumn": "acr_user"
+		},
+		{
+			"name": "acr_user_log",
+			"caption": "\u0416\u0443\u0440\u043d\u0430\u043b \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439",
+			"dbName": "acr_right_v.acr_user_log",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "acr_user_log_name",
+			"dddbDataColumn": "acr_user_log"
+		},
+		{
+			"name": "sms_slot_floor",
+			"caption": "\u0417\u0430\u043b \u0438\u0433\u0440\u043e\u0432\u044b\u0445 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u043e\u0432",
+			"dbName": "acr_right_v.sms_slot_floor",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "sms_slot_floor_name",
+			"dddbDataColumn": "sms_slot_floor"
+		},
+		{
+			"name": "managersheet",
+			"caption": "\u0410\u0420\u041c \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0435\u0433\u043e",
+			"dbName": "acr_right_v.managersheet",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "managersheet_name",
+			"dddbDataColumn": "managersheet"
+		},
+		{
+			"name": "rep_report_type",
+			"caption": "\u0422\u0438\u043f\u044b \u043e\u0442\u0447\u0435\u0442\u043e\u0432",
+			"dbName": "acr_right_v.rep_report_type",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "\u041d\u0415\u0422 \u0414\u041e\u0421\u0422\u0423\u041f\u0410", "dataValue": 0 },
+            	{ "displayValue": "\u0422\u041e\u041b\u042c\u041a\u041e \u0427\u0422\u0415\u041d\u0418\u0415", "dataValue": 1 },
+            	{ "displayValue": "\u0427\u0422\u0415\u041d\u0418\u0415/\u0417\u0410\u041f\u0418\u0421\u042c", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "rep_report_type_name",
+			"dddbDataColumn": "rep_report_type"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"name": "acr_user_login",
+	"title": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c",
+	"table": {
+		"updateTableName": "",
+		"select": "SELECT  usr_id FROM acr_user where sta_id in (1,2) and usr_pass=crypt(?,usr_pass) AND usr_login=?",
+		"key":"usr_id",
+		"rowCountColumn": "",
+		"pageSize": 18,
+		"argType": [ "STRING", "STRING" ]
+	},
+	"columns": [
+		{
+			"name": "usr_id",
+			"caption": "usr_id",
+			"dbName": "acr_user.usr_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"name": "d_user_state",
+	"title": "User State",
+	"table": {
+		"updateTableName": "d_user_state",
+		"select": "select sta_id, sta_name from d_user_state",
+		"key":"sta_id",
+		"rowCountColumn": "",
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "sta_id",
+			"caption": "sta_id",
+			"dbName": "d_user_state.sta_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "sta_name",
+			"caption": "State",
+			"dbName": "d_user_state.sta_name",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		}
+	]
+}

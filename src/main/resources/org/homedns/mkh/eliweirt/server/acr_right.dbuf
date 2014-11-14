@@ -1,0 +1,212 @@
+{
+	"name": "acr_right",
+	"title": "Role Rights",
+	"table": {
+		"updateTableName": "? = call save_eliweirt_role",
+		"select": "select  user_role, role_id, entry_panel, adminsheet, acr_right,  acr_user,  acr_user_log,  sms_slot_floor, managersheet,  rep_report_type FROM  acr_right_v",
+		"key":"user_role",
+		"rowCountColumn": "",
+		"pageSize": 18,
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "user_role",
+			"caption": "User Role",
+			"dbName": "acr_right_v.user_role",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "role_id",
+			"caption": "role_id",
+			"dbName": "acr_right_v.role_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "entry_panel",
+			"caption": "Entry Panel",
+			"dbName": "acr_right_v.entry_panel",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "dddb",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "acr_sys_object",
+			"dddbDisplayColumn": "sob_name",
+			"dddbDataColumn": "sob_id"
+		},
+		{
+			"name": "adminsheet",
+			"caption": "Administrator",
+			"dbName": "acr_right_v.adminsheet",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "adminsheet_name",
+			"dddbDataColumn": "adminsheet"
+		},
+		{
+			"name": "acr_right",
+			"caption": "Role",
+			"dbName": "acr_right_v.acr_right",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "acr_right_name",
+			"dddbDataColumn": "acr_right"
+		},
+		{
+			"name": "acr_user",
+			"caption": "User",
+			"dbName": "acr_right_v.acr_user",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "acr_user_name",
+			"dddbDataColumn": "acr_user"
+		},
+		{
+			"name": "acr_user_log",
+			"caption": "Log",
+			"dbName": "acr_right_v.acr_user_log",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "acr_user_log_name",
+			"dddbDataColumn": "acr_user_log"
+		},
+		{
+			"name": "sms_slot_floor",
+			"caption": "Slot Floor",
+			"dbName": "acr_right_v.sms_slot_floor",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "sms_slot_floor_name",
+			"dddbDataColumn": "sms_slot_floor"
+		},
+		{
+			"name": "managersheet",
+			"caption": "Manager",
+			"dbName": "acr_right_v.managersheet",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "managersheet_name",
+			"dddbDataColumn": "managersheet"
+		},
+		{
+			"name": "rep_report_type",
+			"caption": "Report Type",
+			"dbName": "acr_right_v.rep_report_type",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "ddlb",
+			"limit": 0,
+			"required": false,
+			"mask": "",
+            "values":[
+            	{ "displayValue": "NO_ACCESS", "dataValue": 0 },
+            	{ "displayValue": "READ_ONLY", "dataValue": 1 },
+            	{ "displayValue": "READ_WRITE", "dataValue": 2 }
+            ],
+			"dddbName": "",
+			"dddbDisplayColumn": "rep_report_type_name",
+			"dddbDataColumn": "rep_report_type"
+		}
+	]
+}

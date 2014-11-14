@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Eliweirt.html</welcome-file>
+	</welcome-file-list>
+
+  <!-- Servlets -->
+	<servlet> 
+		<servlet-name>EliweirtDataServiceImpl</servlet-name> 
+		<servlet-class>org.homedns.mkh.eliweirt.server.EliweirtDataServiceImpl</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>EliweirtDataServiceImpl</servlet-name> 
+		<url-pattern>/Eliweirt/dataservice</url-pattern> 
+	</servlet-mapping> 
+
+	<servlet> 
+		<servlet-name>Download</servlet-name> 
+		<servlet-class>org.homedns.mkh.eliweirt.server.Download</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>Download</servlet-name> 
+		<url-pattern>/Eliweirt/download</url-pattern> 
+	</servlet-mapping> 
+
+    <servlet>  
+      <servlet-name>remoteLogging</servlet-name>  
+      <servlet-class>org.homedns.mkh.eliweirt.server.RemoteLoggingServiceImpl</servlet-class>  
+    </servlet> 
+ 
+    <servlet-mapping>  
+      <servlet-name>remoteLogging</servlet-name>  
+      <url-pattern>/Eliweirt/remote_logging</url-pattern>  
+    </servlet-mapping>  
+</web-app>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='Eliweirt'>
+  <inherits name='com.google.gwt.user.theme.standard.Standard' />
+  <inherits name="com.google.gwt.resources.Resources" />
+  <inherits name='org.homedns.mkh.dataservice.Dataservice'/>
+  <inherits name='org.homedns.mkh.ui.Ui'/>
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='org.homedns.mkh.eliweirt.client.Eliweirt' />
+  <stylesheet src="js/ext/resources/css/ext-all.css"/>
+
+  <servlet path='/dataservice' class='org.homedns.mkh.eliweirt.server.EliweirtDataServiceImpl'/>
+  <servlet path='/download' class='org.homedns.mkh.eliweirt.server.Download'/>
+
+  <replace-with class="org.homedns.mkh.eliweirt.client.AppAccessHandlerFactory">
+    <when-type-is class="org.homedns.mkh.ui.client.frame.AccessHandlerFactory" />
+  </replace-with>
+  <replace-with class="org.homedns.mkh.ui.client.command.BaseCommandCreator">
+    <when-type-is class="org.homedns.mkh.ui.client.command.CommandFactory.CommandCreator" />
+  </replace-with>
+  <replace-with class="org.homedns.mkh.ui.client.cache.StoreCreator">
+    <when-type-is class="org.homedns.mkh.dataservice.client.view.ViewCacheFactory.ViewCacheCreator" />
+  </replace-with>
+  <replace-with class="org.homedns.mkh.eliweirt.client.AppPresenterCreator">
+    <when-type-is class="org.homedns.mkh.dataservice.client.presenter.PresenterFactory.PresenterCreator" />
+  </replace-with>
+  <replace-with class="org.homedns.mkh.ui.client.WidgetDescCreator">
+    <when-type-is class="org.homedns.mkh.dataservice.client.view.ViewDescFactory.ViewDescCreator" />
+  </replace-with>
+  <replace-with class="org.homedns.mkh.dataservice.client.sender.BaseSenderCreator">
+    <when-type-is class="org.homedns.mkh.dataservice.client.sender.RequestSenderCreator" />
+  </replace-with>
+  <replace-with class="org.homedns.mkh.eliweirt.shared.AppRequestCreator">
+    <when-type-is class="org.homedns.mkh.dataservice.shared.RequestFactory.RequestCreator" />
+  </replace-with>
+
+  <extend-property name="locale" values="ru" />
+  <extend-property name="locale" values="en"/>
+  <set-property-fallback name="locale" value="en"/>
+
+  <set-property name="gwt.logging.enabled" value="TRUE"/>
+  <set-property name="gwt.logging.consoleHandler" value="ENABLED"/>
+  <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
+  <set-property name="gwt.logging.logLevel" value="INFO"/>
+  <set-property name="gwt.logging.popupHandler" value="DISABLED" />
+  
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>

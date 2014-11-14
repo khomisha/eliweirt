@@ -1,0 +1,47 @@
+{
+	"name": "acr_sys_object",
+	"title": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442 \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430",
+	"table": {
+		"updateTableName": "acr_sys_object",
+		"select": "select sob_id, sob_name from acr_sys_object",
+		"key":"sob_id",
+		"rowCountColumn": "",
+		"argType": []
+	},
+	"columns": [
+		{
+			"name": "sob_id",
+			"caption": "sob_id",
+			"dbName": "acr_sys_object.sob_id",
+			"type": "INT",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 0,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		},
+		{
+			"name": "sob_name",
+			"caption": "\u0418\u043c\u044f \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430 \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430",
+			"dbName": "acr_sys_object.sob_name",
+			"type": "STRING",
+			"update": true,
+			"validationRule": "",
+			"validationMsg": "",
+			"style": "edit",
+			"limit": 50,
+			"required": true,
+			"mask": "",
+			"values":[],
+			"dddbName": "",
+			"dddbDisplayColumn": "",
+			"dddbDataColumn": ""
+		}
+	]
+}
