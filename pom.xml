@@ -12,7 +12,7 @@
   <version>1.0.1</version>
 
   <name>Eliweirt</name>
-  <url>https://github.com/khomisha/eliweirt</url>
+  <url>https://github.com/khomisha/eliweirt.git</url>
   <description>Excel lightweight reporting tool </description>
 
     <licenses>
